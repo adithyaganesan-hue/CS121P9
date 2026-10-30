@@ -11,7 +11,7 @@ public class Guesser{
             System.out.println("0) Exit\n1) Human Guesser\n2) Computer Guesser\n");
             System.out.println("Please enter a number: ");
             int num = input.nextInt();
-           switch(num){
+            switch(num){
                 case 0:
                     keepGoing = false;
                     break;
@@ -45,8 +45,6 @@ public class Guesser{
 
                     while (!computerGuessed) {
                         int guess = guesser(highBound, lowBound);
-                        System.out.println(highBound);
-                        System.out.println(lowBound);
                         System.out.println("I guess " + guess);
                         System.out.println("Too (H)igh, too (L)ow, or (C)orrect?\n");
 
